@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 namespace Framework;
 
 use Framework\Routers\DefaultRouter;
@@ -153,7 +153,7 @@ class App
         }
     }
 
-    public function displayError(string $error, string $message)
+    public function displayError(int $error, string $message)
     {
         echo '<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">';
         echo '<div class="text-center">';

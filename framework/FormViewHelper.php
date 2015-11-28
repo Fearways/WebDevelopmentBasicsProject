@@ -66,7 +66,6 @@ class FormViewHelper
 
         return $this;
     }
-
     public function initUploadFile() : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = '<input type="file"';
@@ -74,7 +73,13 @@ class FormViewHelper
 
         return $this;
     }
+    public function initDate() : FormViewHelper
+    {
+        $this->_elements[$this->_currentElementId]['opening tag'] = '<input type="date"';
+        $this->_elements[$this->_currentElementId]['closing tag'] = '>';
 
+        return $this;
+    }
     public function initRadioBox() : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = '<input type="radio"';
