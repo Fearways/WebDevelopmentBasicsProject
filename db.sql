@@ -86,13 +86,15 @@ INSERT INTO roles (name) VALUES ('conference administrator');
 
 INSERT INTO users (username, password, email) VALUES ('Asen', 'e3431a8e0adbf96fd140103dc6f63a3f8fa343ab                                                        ', 'asd@asd.com');
 INSERT INTO users (username, password, email) VALUES ('Ivan', 'e3431a8e0adbf96fd140103dc6f63a3f8fa343ab                                                        ', 'asdd@asdd.com');
-INSERT INTO users (username, password, email) VALUES ('Aleksandur', 'e3431a8e0adbf96fd140103dc6f63a3f8fa343ab                                                        ', 'testUser1234@a.com');
-INSERT INTO users (username, password, email) VALUES ('Lubomir', 'e3431a8e0adbf96fd140103dc6f63a3f8fa343ab                                                        ', 'testUser1235@b.com');
+INSERT INTO users (username, password, email) VALUES ('Aleksandur', 'e3431a8e0adbf96fd140103dc6f63a3f8fa343ab                                                        ', 'asd1234@a.com');
+INSERT INTO users (username, password, email) VALUES ('Lubomir', 'e3431a8e0adbf96fd140103dc6f63a3f8fa343ab                                                        ', 'asd@b.com');
+INSERT INTO users (username, password, email) VALUES ('Rado', 'e3431a8e0adbf96fd140103dc6f63a3f8fa343ab                                                        ', 'rado@b.com');
 
 INSERT INTO user_roles (user_id, role_id) VALUES('1', '1');
 INSERT INTO user_roles (user_id, role_id) VALUES('2', '1');
 INSERT INTO user_roles (user_id, role_id) VALUES('3', '1');
 INSERT INTO user_roles (user_id, role_id) VALUES('4', '1');
+INSERT INTO user_roles (user_id, role_id) VALUES('5', '2');
 
 INSERT INTO venue (name) VALUES ('Gabrovo Palace');
 INSERT INTO venue (name) VALUES ('Conference room Varna');

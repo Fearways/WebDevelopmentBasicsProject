@@ -14,9 +14,9 @@
         ->initLabel()->setValue("Conference")->setAttribute('for', 'conference')->create()
         ->initTextBox()->setName('conference')->setAttribute('id', 'conference')->setAttribute('class', 'form-control input-md')->create()
         ->initLabel()->setValue("Start time")->setAttribute('for', 'start')->create()
-        ->initTextBox()->setName('start')->setAttribute('id', 'start')->setAttribute('class', 'form-control input-md')->create()
+        ->initDate()->setName('start')->setAttribute('id', 'start')->setAttribute('class', 'form-control input-md')->create()
         ->initLabel()->setValue("End time")->setAttribute('for', 'end')->create()
-        ->initTextBox()->setName('end')->setAttribute('id', 'end')->setAttribute('class', 'form-control input-md')->create()
+        ->initDate()->setName('end')->setAttribute('id', 'end')->setAttribute('class', 'form-control input-md')->create()
         ->initSubmit()->setAttribute('value', 'Edit')->setAttribute('class', 'btn btn-primary btn-lg col-sm-4 col-sm-offset-4')->create()
         ->render(); ?>
 </div>

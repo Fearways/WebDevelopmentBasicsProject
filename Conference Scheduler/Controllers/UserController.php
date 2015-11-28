@@ -28,6 +28,8 @@ class UserController extends BaseController
     }
 
     /**
+     * @Post
+     * @Authorize error:("Error message")
      * @Route("users/deleteUser")
      */
     public function deleteUser() {

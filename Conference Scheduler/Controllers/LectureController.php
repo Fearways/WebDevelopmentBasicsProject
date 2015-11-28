@@ -402,6 +402,8 @@ class LectureController extends BaseController
     }
 
     /**
+     * @Post
+     * @Authorize error:("Error message")
      * @Route("lecture/deleteLecture")
      */
     public function deleteLecture() {

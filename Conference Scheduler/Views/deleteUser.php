@@ -3,7 +3,7 @@
     <p>Warning: Delete users only as last resort! If their actions weren't harmful to any other user or the website, consider only contacting them.</p>
     <?php
     \Framework\FormViewHelper::init()
-        ->initForm('/users/deleteUser/', ['class' => 'form-group'], 'post')
+        ->initForm('/users/deleteUser', ['class' => 'form-group'], 'post')
         ->initSubmit()->setAttribute('value', 'Delete user')->setAttribute('class', 'btn btn-primary btn-lg col-sm-4 col-sm-offset-4')->create()
         ->render(); ?>
 </div>

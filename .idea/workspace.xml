@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b4b6f38-d56b-48af-b3d5-f72dc66da21f" name="Default" comment="" />
+    <list default="true" id="1b4b6f38-d56b-48af-b3d5-f72dc66da21f" name="Default" comment="Added Identity and HttpContext">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/Documentation/Annotations" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/Documentation/BindingModelConvention" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/Documentation/ControllerConvention" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/Documentation/Credits" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/Documentation/Errors" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/Documentation/Injection" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/Documentation/RoutingConvention" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/Documentation/ViewsAndViewModelsConvention" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="WebDevelopmentBasicsProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -16,60 +26,23 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="WebDevelopmentBasicsProject" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SimpleDB.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework/DB/SimpleDB.php">
+      <file leaf-file-name="meta.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/meta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <marker date="1448381910894" expanded="true" signature="2652:2751" placeholder="SELECT isAdm..users..." />
-                <marker date="1448381910894" expanded="true" signature="3287:3385" placeholder="SELECT ${{$c..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IRouter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework/Routers/IRouter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultRouter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework/Routers/DefaultRouter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework/Config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NativeSession.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/framework/Sessions/NativeSession.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.019036954">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.11703958">
+              <caret line="4" column="90" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -83,12 +56,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/login.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/editLecture.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/editConf.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/deleteUser.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/deleteConf.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/create.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/addLecture.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/addAdmin.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/UserController/profile.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/LectureController/lecture.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/LectureController/my.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/ConferenceController/conference.php" />
+        <option value="$PROJECT_DIR$/framework/Identity/Role.php" />
+        <option value="$PROJECT_DIR$/framework/Identity/RoleManager.php" />
+        <option value="$PROJECT_DIR$/framework/Identity/UserManager.php" />
+        <option value="$PROJECT_DIR$/framework/Identity/UserRoles.php" />
+        <option value="$PROJECT_DIR$/framework/Identity/IdentityUser.php" />
+        <option value="$PROJECT_DIR$/framework/Identity/IIdentityUser.php" />
+        <option value="$PROJECT_DIR$/framework/Identity/IRoleManager.php" />
+        <option value="$PROJECT_DIR$/framework/Identity/IUserManager.php" />
+        <option value="$PROJECT_DIR$/framework/HttpContext/HttpContext.php" />
+        <option value="$PROJECT_DIR$/framework/Annotations/Annotation.php" />
+        <option value="$PROJECT_DIR$/framework/Annotations/AnnotationsParser.php" />
+        <option value="$PROJECT_DIR$/framework/Annotations/AnonymousAnnotation.php" />
+        <option value="$PROJECT_DIR$/framework/Annotations/AuthorizeAnnotation.php" />
+        <option value="$PROJECT_DIR$/framework/Annotations/IAnnotation.php" />
         <option value="$PROJECT_DIR$/framework/DB/SimpleDB.php" />
-        <option value="$PROJECT_DIR$/framework/Routers/IRouter.php" />
-        <option value="$PROJECT_DIR$/framework/Routers/DefaultRouter.php" />
-        <option value="$PROJECT_DIR$/framework/Config.php" />
-        <option value="$PROJECT_DIR$/framework/Sessions/ISession.php" />
         <option value="$PROJECT_DIR$/framework/Sessions/NativeSession.php" />
+        <option value="$PROJECT_DIR$/framework/BaseController.php" />
+        <option value="$PROJECT_DIR$/framework/Config.php" />
+        <option value="$PROJECT_DIR$/framework/FormViewHelper.php" />
+        <option value="$PROJECT_DIR$/framework/FrontController.php" />
+        <option value="$PROJECT_DIR$/framework/Injector.php" />
+        <option value="$PROJECT_DIR$/framework/InputData.php" />
+        <option value="$PROJECT_DIR$/framework/Loader.php" />
+        <option value="$PROJECT_DIR$/framework/Normalizer.php" />
+        <option value="$PROJECT_DIR$/framework/Scanner.php" />
+        <option value="$PROJECT_DIR$/framework/Token.php" />
+        <option value="$PROJECT_DIR$/framework/Validator.php" />
+        <option value="$PROJECT_DIR$/framework/View.php" />
+        <option value="$PROJECT_DIR$/framework/App.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/config/database.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Models/BindingModels/ConferenceBindingModel.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Models/BindingModels/LectureBindingModel.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Models/BindingModels/LoginBindingModel.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Controllers/LectureController.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/LectureController/open.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Public/js/utility.js" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Views/meta.php" />
+        <option value="$PROJECT_DIR$/Conference Scheduler/Controllers/ConferenceController.php" />
       </list>
     </option>
   </component>
@@ -109,7 +127,21 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -132,8 +164,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,7 +218,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Routers" />
+              <option name="myItemId" value="Annotations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -202,32 +232,135 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
+              <option name="myItemId" value="Conference Scheduler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebDevelopmentBasicsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebDevelopmentBasicsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference Scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConferenceController" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebDevelopmentBasicsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebDevelopmentBasicsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference Scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebDevelopmentBasicsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebDevelopmentBasicsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference Scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebDevelopmentBasicsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebDevelopmentBasicsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference Scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebDevelopmentBasicsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebDevelopmentBasicsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conference Scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Conference Scheduler/Public" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\phpstorm\WebDevelopmentBasicsProject\framework" />
+      <recent name="D:\projects\phpstorm\WebDevelopmentBasicsProject" />
+      <recent name="D:\projects\phpstorm\WebDevelopmentBasicsProject\Conference-Scheduler" />
       <recent name="D:\projects\phpstorm\WebDevelopmentBasicsProject\framework\DB" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\phpstorm\WebDevelopmentBasicsProject\framework" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Built-in Web Server.Unnamed">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -237,6 +370,9 @@
     </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server">
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -254,10 +390,16 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="Unnamed" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/Conference Scheduler/Public">
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHP Built-in Web Server.Unnamed" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\lubomir\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -278,32 +420,51 @@
       <option name="project" value="LOCAL" />
       <updated>1448383157626</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Session">
+      <created>1448399009124</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1448399009124</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Finished framework">
+      <created>1448543806797</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1448543806797</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Identity and HttpContext">
+      <created>1448725517448</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1448725517448</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32946146" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -318,145 +479,440 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
     <MESSAGE value="first commit" />
     <MESSAGE value="Added Router" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Router" />
+    <MESSAGE value="Added Session" />
+    <MESSAGE value="Finished framework" />
+    <MESSAGE value="Added Identity and HttpContext" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Identity and HttpContext" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/framework/DB/SimpleDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1448381910894" expanded="true" signature="2652:2751" placeholder="SELECT isAdm..users..." />
-            <marker date="1448381910894" expanded="true" signature="3287:3385" placeholder="SELECT ${{$c..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Routers/IRouter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Routers/DefaultRouter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Sessions/NativeSession.php">
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Models/ViewModels/UserController/AllUsersViewModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/DB/SimpleDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1448381910894" expanded="true" signature="2652:2751" placeholder="SELECT isAdm..users..." />
-            <marker date="1448381910894" expanded="true" signature="3287:3385" placeholder="SELECT ${{$c..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Routers/IRouter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Routers/DefaultRouter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Config.php">
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Models/ViewModels/UserController/ProfileViewModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Models/ViewModels/UserController/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/DB/SimpleDB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/ConferenceController/conference.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/ConferenceController/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/ConferenceController/lectures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/ConferenceController/manageAdmins.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/ConferenceController/maxLectures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/ConferenceController/open.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/addAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/addLectureLayout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/confAdmins.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/conference.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/conferences.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/createConference.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/deleteLecture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/deleteUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/discardConference.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/editConfLayout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/editLectureLayout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/lecture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/lectures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/myLectures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/Layouts/userProfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/LectureController/open.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9862306">
+          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/LectureController/my.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/LectureController/lecture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/LectureController/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/UserController/allusers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/UserController/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/addAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/addLecture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/deleteConf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/deleteUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/editConf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/editLecture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/removeLecture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18478261">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="16" />
           <folding>
-            <marker date="1448381910894" expanded="true" signature="2652:2751" placeholder="SELECT isAdm..users..." />
-            <marker date="1448381910894" expanded="true" signature="3287:3385" placeholder="SELECT ${{$c..." />
+            <marker date="1448727087376" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1448727087376" expanded="true" signature="-1:-1" placeholder="SELECT u.id ..users..." />
+            <marker date="1448727087376" expanded="true" signature="-1:-1" placeholder="SELECT u.id ..users..." />
+            <marker date="1448727087376" expanded="true" signature="-1:-1" placeholder="SELECT id FR..users..." />
+            <marker date="1448727087376" expanded="true" signature="-1:-1" placeholder="SELECT id FR..users..." />
+            <marker date="1448727087376" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1448727087376" expanded="true" signature="-1:-1" placeholder="SELECT id, e..users..." />
+            <marker date="1448727087376" expanded="true" signature="-1:-1" placeholder="SELECT id FR..users..." />
+            <marker date="1448727087376" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1448727087376" expanded="true" signature="-1:-1" placeholder="SELECT usern..users..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Routers/IRouter.php">
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Controllers/LectureController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="199" column="23" selection-start-line="199" selection-start-column="21" selection-end-line="199" selection-end-column="23" />
+          <folding>
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT id, u..users..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT id, u..users..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT user_..user_lectures..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT l.id ..lecture..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT l.id ..lecture..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT id, u..users..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT lectu..user_lectures..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT s.id ..lecture..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..user_lectures..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT s.id ..lecture..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT id, u..users..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT id, n..hall..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT id FR..lecture..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT id, u..users..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT id, n..hall..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT id, n..conference..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="UPDATE lectu..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT id FR..lecture..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1448729931366" expanded="true" signature="-1:-1" placeholder="SELECT c.id ..lecture..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.092391305">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Routers/DefaultRouter.php">
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Controllers/ConferenceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="194" column="77" selection-start-line="194" selection-start-column="77" selection-end-line="194" selection-end-column="77" />
+          <folding>
+            <element signature="e#56#102#0#PHP" expanded="true" />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT c.id ..conference..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..users..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT c.id ..conference..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="/*WHERE c.st..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..users..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT id, u..users..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT user_..user_lectures..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT l.id ..lecture..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT s.id ..lecture..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..user_lectures..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT s.id ..lecture..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="UPDATE confe..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT id FR..conference..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT id, u..users..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT id, n..venue..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT id FR..conference..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT c.id ..conference..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..users..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT u.id,..users..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="SELECT u.id ..users..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1448731012743" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Sessions/ISession.php">
+    <entry file="file://$PROJECT_DIR$/Conference Scheduler/Views/meta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019036954">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/Sessions/NativeSession.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019036954">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.11703958">
+          <caret line="4" column="90" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
           <folding />
         </state>
       </provider>
