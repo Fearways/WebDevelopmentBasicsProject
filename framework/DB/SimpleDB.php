@@ -1,9 +1,13 @@
 <?php
 
+namespace Framework\DB;
 
+use Framework\App;
+use Framework\Normalizer;
 
 class SimpleDB
 {
+    private static $inst = [];
     protected $_connection = 'default';
     private $_db = null;
     /**
@@ -32,7 +36,7 @@ class SimpleDB
         }
     }
 
-    public function prepare($sql, $params = array(), $pdoOptions = array())
+    public function prepare(string $sql, array $params = array(), array $pdoOptions = array()) : SimpleDB
     {
         $this->_statement = $this->_db->prepare($sql, $pdoOptions);
         $this->_params = $params;
@@ -40,7 +44,7 @@ class SimpleDB
         return $this;
     }
 
-    public function execute($params = array())
+    public function execute(array $params = array()) : SimpleDB
     {
         if ($params) {
             $this->_params = $params;
@@ -49,7 +53,7 @@ class SimpleDB
         return $this;
     }
 
-    public function fetchAllAssoc($escape = true)
+    public function fetchAllAssoc(bool $escape = true)
     {
         $data = $this->_statement->fetchAll(\PDO::FETCH_ASSOC);
         if ($data === false) {
@@ -71,7 +75,7 @@ class SimpleDB
         return $data;
     }
 
-    public function fetchRowAssoc($escape = true)
+    public function fetchRowAssoc(bool $escape = true)
     {
         $data = $this->_statement->fetch(\PDO::FETCH_ASSOC);
         if ($data === false) {
@@ -90,7 +94,20 @@ class SimpleDB
         return $data;
     }
 
-    public function getLastInsertedId()
+    /**
+     * @param $instanceName
+     * @throws \Exception
+     * @return SimpleDB
+     */
+    public static function getInstance(string $instanceName = 'default') : SimpleDB
+    {
+        if (self::$inst[$instanceName] == null){
+            throw new \Exception('Instance with that name was not set');
+        }
+        return self::$inst[$instanceName];
+    }
+
+    public function getLastInsertedId() : int
     {
         return $this->_db->lastInsertId();
     }
@@ -103,48 +120,26 @@ class SimpleDB
         return $this->_statement;
     }
 
-    public static function isAdmin()
+    public static function isAdmin() : bool
     {
-        $statement = self::$database->prepare("SELECT isAdmin
-                      FROM users
-                      WHERE username = ? AND id = ?");
+        $statement = self::$database->prepare("SELECT u.id
+                                                FROM user_roles ur
+                                                JOIN users u
+                                                ON u.id = ur.user_id
+                                                WHERE (u.username = ? AND u.id = ?) AND ur.role_id = 2");
         $statement->bindParam(1, App::getInstance()->getSession()->_username);
         $statement->bindParam(2, App::getInstance()->getSession()->_login);
         $statement->execute();
         $response = $statement->fetch(\PDO::FETCH_ASSOC);
         if ($response) {
-            return Normalizer::normalize($response['isAdmin'], 'bool');
+            $id = Normalizer::normalize($response['isAdmin'], 'bool');
+            return true;
         }
 
         return false;
     }
 
-    public static function hasRole($role)
-    {
-        $col = 'is' . ucfirst($role);
-        try {
-            $statement = self::$database->prepare("SELECT {$col}
-                      FROM users
-                      WHERE username = ? AND id = ?");
-            $statement->bindColumn(1, $col);
-            $statement->bindParam(1, App::getInstance()->getSession()->_username);
-            $statement->bindParam(2, App::getInstance()->getSession()->_login);
-
-            $statement->execute();
-            $response = $statement->fetch(\PDO::FETCH_ASSOC);
-            $response = $response['is' . ucfirst($role)];
-        } catch (\PDOException $ex) {
-            throw new \Exception("Check your db, missing role '$col'");
-        }
-
-        if ($response) {
-            return Normalizer::normalize($response, 'bool');
-        }
-
-        return false;
-    }
-
-    public function affectedRows()
+    public function affectedRows() : int
     {
         return $this->_statement->rowCount();
     }

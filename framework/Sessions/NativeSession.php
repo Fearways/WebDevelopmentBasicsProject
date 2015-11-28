@@ -1,5 +1,7 @@
 <?php
 
+namespace Framework\Sessions;
+
 class NativeSession implements ISession
 {
     public function __construct($name, $lifetime = 3600, $path = null, $domain = null, $secure = false)
@@ -10,7 +12,6 @@ class NativeSession implements ISession
 
         session_name($name);
 
-        // last true forbids js to access cookies
         session_set_cookie_params($lifetime, $path, $domain, $secure, true);
         session_start();
     }

@@ -1,5 +1,6 @@
 <?php
 
+namespace Framework\Routers;
 
 class DefaultRouter implements IRouter
 {

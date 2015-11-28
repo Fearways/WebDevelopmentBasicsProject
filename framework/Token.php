@@ -1,9 +1,11 @@
 <?php
+declare(strict_types=1);
 
+namespace Framework;
 
 /**
  * Class Token - CSRF Token
- * @package FTS
+ * @package Mvc
  */
 class Token
 {
@@ -14,7 +16,7 @@ class Token
 
     }
 
-    public static function init()
+    public static function init() : Token
     {
         if (self::$_instance == null) {
             self::$_instance = new Token();
@@ -23,7 +25,7 @@ class Token
         return self::$_instance;
     }
 
-    public static function render($samePage = false)
+    public static function render(bool $samePage = false)
     {
         if (!$samePage) {
             self::generateToken();
@@ -33,14 +35,14 @@ class Token
         echo $html;
     }
 
-    public static function validates($token)
+    public static function validates($token) : bool
     {
         $isValid = App::getInstance()->getSession()->_token === $token;
         self::generateToken();
         return $isValid;
     }
 
-    public static function getToken($samePageToken = false)
+    public static function getToken(bool $samePageToken = false)
     {
         if (!$samePageToken) {
             self::generateToken();

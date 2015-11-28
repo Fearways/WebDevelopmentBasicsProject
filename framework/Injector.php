@@ -1,5 +1,6 @@
 <?php
 
+namespace Framework;
 
 class Injector
 {
@@ -11,7 +12,7 @@ class Injector
         self::$_config = App::getInstance()->getConfig()->inject;
     }
 
-    public static function getInstance()
+    public static function getInstance() : Injector
     {
         if (self::$_instance === null) {
             self::$_instance = new Injector();
@@ -21,9 +22,10 @@ class Injector
     }
 
     /**
-     * @param String $config
+     * @param $config
+     * @throws \Exception
      */
-    public function setConfig($config)
+    public function setConfig(string $config)
     {
         if (is_string($config)) {
             self::$_config = App::getInstance()->getConfig()->$config;

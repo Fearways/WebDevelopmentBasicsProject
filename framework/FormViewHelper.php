@@ -1,4 +1,7 @@
 <?php
+declare(strict_types=1);
+
+namespace Framework;
 
 class FormViewHelper
 {
@@ -11,10 +14,9 @@ class FormViewHelper
 
     private function  __construct()
     {
-
     }
 
-    public static function init()
+    public static function init() : FormViewHelper
     {
         if (self::$_instance == null) {
             self::$_instance = new FormViewHelper();
@@ -23,7 +25,7 @@ class FormViewHelper
         return self::$_instance;
     }
 
-    public function initTextBox()
+    public function initTextBox() : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = '<input type="text"';
         $this->_elements[$this->_currentElementId]['closing tag'] = '>';
@@ -31,7 +33,7 @@ class FormViewHelper
         return $this;
     }
 
-    public function initForm($action, $attributes = array(), $method = 'post')
+    public function initForm(string $action, array $attributes = array(), string $method = 'post') : FormViewHelper
     {
         if ($this->_currentElementId != 0) {
             throw new \Exception('Cannot start form as not first element!', 500);
@@ -49,7 +51,7 @@ class FormViewHelper
         return $this;
     }
 
-    public function initPasswordBox()
+    public function initPasswordBox() : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = '<input type="password"';
         $this->_elements[$this->_currentElementId]['closing tag'] = '>';
@@ -57,7 +59,7 @@ class FormViewHelper
         return $this;
     }
 
-    public function initTextArea($value = '')
+    public function initTextArea(string $value = '') : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = '<textarea';
         $this->_elements[$this->_currentElementId]['closing tag'] = ">$value</textarea>";
@@ -65,7 +67,7 @@ class FormViewHelper
         return $this;
     }
 
-    public function initUploadFile()
+    public function initUploadFile() : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = '<input type="file"';
         $this->_elements[$this->_currentElementId]['closing tag'] = '>';
@@ -73,7 +75,7 @@ class FormViewHelper
         return $this;
     }
 
-    public function initRadioBox()
+    public function initRadioBox() : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = '<input type="radio"';
         $this->_elements[$this->_currentElementId]['closing tag'] = '>';
@@ -81,7 +83,7 @@ class FormViewHelper
         return $this;
     }
 
-    public function initSubmit()
+    public function initSubmit() : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = '<input type="submit"';
         $this->_elements[$this->_currentElementId]['closing tag'] = '>';
@@ -89,7 +91,7 @@ class FormViewHelper
         return $this;
     }
 
-    public function initLabel()
+    public function initLabel() : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = '<label';
         $this->_elements[$this->_currentElementId]['closing tag'] = '</label>';
@@ -97,7 +99,7 @@ class FormViewHelper
         return $this;
     }
 
-    public function initCheckBox()
+    public function initCheckBox() : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = '<input type="checkbox"';
         $this->_elements[$this->_currentElementId]['closing tag'] = '>';
@@ -105,7 +107,7 @@ class FormViewHelper
         return $this;
     }
 
-    public function initLink()
+    public function initLink() : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = '<a';
         $this->_elements[$this->_currentElementId]['closing tag'] = '</a>';
@@ -113,7 +115,7 @@ class FormViewHelper
         return $this;
     }
 
-    public function initDiv()
+    public function initDiv() : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = '<div';
         $this->_elements[$this->_currentElementId]['closing tag'] = '</div>';
@@ -121,7 +123,7 @@ class FormViewHelper
         return $this;
     }
 
-    public function initBoostrapDropDown($value, $type)
+    public function initBoostrapDropDown(string $value, string $type) : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['opening tag'] = ' <' . $type . ' class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">' . $value . ' <span class="caret"></span></a>
@@ -131,42 +133,42 @@ class FormViewHelper
         return $this;
     }
 
-    public function setDropDownLi($href, $value)
+    public function setDropDownLi(string $href, string $value) : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['attributes'][] = '<li><a href="' . $href . '">' . $value . '</a></li>';
 
         return $this;
     }
 
-    public function setName($name)
+    public function setName(string $name) : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['name'] = 'name="' . $name . '"';
 
         return $this;
     }
 
-    public function setValue($value)
+    public function setValue(string $value) : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['value'] = '>' . $value;
 
         return $this;
     }
 
-    public function setAttribute($attribute, $value)
+    public function setAttribute(string $attribute, string $value) : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['attributes'][] = $attribute . '="' . $value . '"';
 
         return $this;
     }
 
-    public function setChecked()
+    public function setChecked() : FormViewHelper
     {
         $this->_elements[$this->_currentElementId]['checked'] = 'checked';
 
         return $this;
     }
 
-    public function create()
+    public function create() : FormViewHelper
     {
         $element = $this->_elements[$this->_currentElementId];
         $html = $element['opening tag'];
@@ -197,7 +199,7 @@ class FormViewHelper
         return $this;
     }
 
-    public function render($samePageToken = false)
+    public function render(bool $samePageToken = false)
     {
         if ($this->_isInForm) {
             $action = $this->_elements['form']['action'];

@@ -1,9 +1,10 @@
 <?php
+declare(strict_types=1);
 
+namespace Framework;
 
 class Normalizer
 {
-
     /**
      * Normalizes given data. Escapes html special chars if no types stated or explicitly stated not to escape.
      * Other types to normalize are int, float, double, bool, string, trim, xss. Syntax is for example:
@@ -13,7 +14,7 @@ class Normalizer
      * @return bool|float|int|string
      * @throws \Exception When not valid type found.
      */
-    public static function normalize($data, $types)
+    public static function normalize(string $data, $types)
     {
         if ($types == null) {
             return htmlentities($data);

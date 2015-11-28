@@ -1,5 +1,7 @@
 <?php
 
+namespace Framework\Routers;
+
 interface IRouter
 {
     /**

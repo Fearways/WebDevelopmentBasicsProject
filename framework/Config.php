@@ -1,7 +1,7 @@
 <?php
-/**
- * Main config Class.
- */
+declare(strict_types=1);
+
+namespace Framework;
 
 class Config
 {
@@ -12,10 +12,9 @@ class Config
 
     private function __construct()
     {
-
     }
 
-    public function setConfigFolder($configFolder)
+    public function setConfigFolder(string $configFolder)
     {
         if (!$configFolder) {
             throw new \Exception('Empty config folder path.');
@@ -36,7 +35,7 @@ class Config
         }
     }
 
-    public static function getInstance()
+    public static function getInstance() : Config
     {
         if (self::$_instance == null) {
             self::$_instance = new Config();
@@ -50,7 +49,7 @@ class Config
         return $this->_configFolder;
     }
 
-    public function includeConfigFile($path)
+    public function includeConfigFile(string $path)
     {
         if (!$path) {
             throw new \Exception('Empty config path');
@@ -65,7 +64,7 @@ class Config
         }
     }
 
-    public function __get($name)
+    public function __get(string $name)
     {
         if (!$this->_configArray[$name]) {
             $this->includeConfigFile($this->_configFolder . $name . '.php');

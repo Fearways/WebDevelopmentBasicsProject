@@ -1,5 +1,12 @@
 <?php
 
+namespace Framework;
+
+use Framework\Routers\DefaultRouter;
+use Framework\Routers\IRouter;
+use Framework\Sessions\ISession;
+use Framework\Sessions\NativeSession;
+
 include_once 'Loader.php';
 
 class App
@@ -20,17 +27,17 @@ class App
     private function __construct()
     {
         set_exception_handler(array($this, '_exceptionHandler'));
-        Loader::registerNamespace('FTS', dirname(__FILE__) . DIRECTORY_SEPARATOR);
+        Loader::registerNamespace('Framework', dirname(__FILE__) . DIRECTORY_SEPARATOR);
         Loader::registerAutoLoad();
         $this->_config = Config::getInstance();
     }
 
-    public function getConfigFolder()
+    public function getConfigFolder() : string
     {
         return $this->_config->getConfigFolder();
     }
 
-    public function setConfigFolder($path)
+    public function setConfigFolder(string $path)
     {
         $this->_config->setConfigFolder($path);
     }
@@ -48,7 +55,7 @@ class App
     /**
      * @return App
      */
-    public static function getInstance()
+    public static function getInstance() : App
     {
         if (self::$_instance == null) {
             self::$_instance = new App();
@@ -60,12 +67,12 @@ class App
     /**
      * @return Config
      */
-    public function getConfig()
+    public function getConfig() : Config
     {
         return $this->_config;
     }
 
-    public function getDbConnection($connection = 'default')
+    public function getDbConnection(string $connection = 'default')
     {
         if (!$connection) {
             throw new \Exception('No connection string provided', 500);
@@ -137,7 +144,7 @@ class App
         $this->_frontController->dispatch();
     }
 
-    public function _exceptionHandler(\Exception $ex)
+    public function _exceptionHandler( $ex)
     {
         if ($this->_config && $this->_config->app['displayExceptions'] == true) {
             echo '<pre>' . print_r($ex, true) . '</pre>';
@@ -146,7 +153,7 @@ class App
         }
     }
 
-    public function displayError($error, $message)
+    public function displayError(string $error, string $message)
     {
         echo '<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">';
         echo '<div class="text-center">';
@@ -160,8 +167,7 @@ class App
             }
         } else {
             echo '<h1>Oooops, something went wrong ;(. Error  ' . $error . '</h1>';
-            echo '<img class="decoded shrinkToFit" alt="http://media.topito.com/wp-content/uploads/2011/09/lama_bizarre012.jpg" src="http://media.topito.com/wp-content/uploads/2011/09/lama_bizarre012.jpg" height="340" width="453">';
-        }
+            }
 
         echo '</div>';
         exit;
@@ -174,28 +180,13 @@ class App
         }
     }
 
-    public function getUsername()
+    public function getUsername() : string
     {
         return $this->_session->escapedUsername;
     }
 
-    public function isLogged()
+    public function isLogged(): bool
     {
         return $this->_session->escapedUsername !== null;
-    }
-
-    public function isAdmin()
-    {
-        return SimpleDB::isAdmin();
-    }
-
-    public function isEditor()
-    {
-        return SimpleDB::hasRole('editor');
-    }
-
-    public function isModerator()
-    {
-        return SimpleDB::hasRole('moderator');
     }
 }

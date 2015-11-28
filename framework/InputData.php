@@ -1,6 +1,7 @@
 <?php
+declare(strict_types=1);
 
-
+namespace Framework;
 
 class InputData
 {
@@ -17,7 +18,7 @@ class InputData
     /**
      * @return InputData
      */
-    public static function getInstance()
+    public static function getInstance() : InputData
     {
         if (self::$_instance == null) {
             self::$_instance = new InputData();

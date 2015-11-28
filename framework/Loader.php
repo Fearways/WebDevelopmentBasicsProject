@@ -1,9 +1,11 @@
 <?php
+declare(strict_types=1);
 
+namespace Framework;
 
 /**
  * Auto loads classes when a class is not included.
- * @package FTS
+ * @package Framework
  */
 final class Loader
 {
@@ -16,15 +18,15 @@ final class Loader
 
     public static function registerAutoLoad()
     {
-        spl_autoload_register(array("Loader", 'autoload'));
+        spl_autoload_register(array("\\Framework\\Loader", 'autoload'));
     }
 
-    public static function autoload($class)
+    public static function autoload(string $class)
     {
         self::loadClass($class);
     }
 
-    public static function loadClass($class)
+    public static function loadClass(string $class)
     {
         foreach (self::$namespaces as $namespace => $path) {
             if (strpos($class, $namespace) === 0) {
@@ -43,7 +45,7 @@ final class Loader
 
     }
 
-    public static function registerNamespace($namespace, $path)
+    public static function registerNamespace(string $namespace, string $path)
     {
         $namespace = trim($namespace);
         if (strlen($namespace) > 0) {
@@ -71,6 +73,5 @@ final class Loader
         } else {
             throw new \Exception('Invalid namespaces!');
         }
-
     }
 }

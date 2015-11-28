@@ -1,10 +1,10 @@
 <?php
+declare(strict_types=1);
 
-
+namespace Framework;
 
 class View
 {
-
     private static $_instance = null;
     private $_viewPath = null;
     private $_viewDir = null;
@@ -22,7 +22,7 @@ class View
 
     }
 
-    public static function getInstance()
+    public static function getInstance() : View
     {
         if (self::$_instance == null) {
             self::$_instance = new View();
@@ -31,17 +31,17 @@ class View
         return self::$_instance;
     }
 
-    public function __get($name)
+    public function __get($name) : string
     {
         return $this->_viewBag[$name];
     }
 
-    public function __set($name, $value)
+    public function __set(string $name, string $value)
     {
         $this->_viewBag[$name] = $value;
     }
 
-    public function setViewDirectory($path)
+    public function setViewDirectory(string $path)
     {
         $path = trim($path);
         if ($path) {
@@ -81,7 +81,7 @@ class View
      * @return string
      * @throws \Exception
      */
-    public function displayLayout($name, $returnAsString = false)
+    public function displayLayout($name, bool $returnAsString = false)
     {
         if (count($this->_layoutParts) > 0) {
             foreach ($this->_layoutParts as $key => $template) {
@@ -120,7 +120,7 @@ class View
         }
     }
 
-    public function getLayoutData($name)
+    public function getLayoutData(string $name)
     {
         return $this->_layoutData[$name];
     }
@@ -173,7 +173,7 @@ class View
         $given = implode($tokens);
         if ($expected != $given) {
             throw new \Exception("Controller '" . $callerClass . "' with method '" . $callerMethod .
-                "' cannot call ViewModel '" . $given . "' witch is not belonging to him!", 500);
+                "' cannot call ViewModel '" . $given . "' which is not belonging to him!", 500);
         }
     }
 

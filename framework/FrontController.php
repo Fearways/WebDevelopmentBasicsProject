@@ -1,5 +1,10 @@
 <?php
 
+namespace Framework;
+
+use Framework\DB\SimpleDB;
+use Framework\Routers\IRouter;
+
 class FrontController
 {
     const DEFAULT_CONTROLLER = 'Index';
@@ -24,7 +29,7 @@ class FrontController
         $this->scanCustomRoutes();
     }
 
-    public static function getInstance()
+    public static function getInstance() : FrontController
     {
         if (self::$_instance == null) {
             self::$_instance = new FrontController();
@@ -43,7 +48,7 @@ class FrontController
         $this->_router = $router;
     }
 
-    private function getDefaultController()
+    private function getDefaultController() : string
     {
         $controller = App::getInstance()->getConfig()->app['default_controller'];
         if ($controller) {
@@ -53,7 +58,7 @@ class FrontController
         return self::DEFAULT_CONTROLLER;
     }
 
-    private function getDefaultMethod()
+    private function getDefaultMethod() : string
     {
         $method = App::getInstance()->getConfig()->app['default_method'];
         if ($method) {
@@ -283,7 +288,7 @@ class FrontController
         }
     }
 
-    private function isValidRequestMethod($controller, $method)
+    private function isValidRequestMethod(BaseController $controller, string $method) : bool
     {
         $reflectionMethod = new \ReflectionMethod($controller, $method);
         $foundRequestAnnotations = array();

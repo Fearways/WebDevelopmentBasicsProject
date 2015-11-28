@@ -1,10 +1,12 @@
 <?php
 
+namespace Framework;
 
+use Framework\DB\SimpleDB;
+use Framework\Sessions\ISession;
 
 class BaseController
 {
-
     /**
      * @var App
      */
